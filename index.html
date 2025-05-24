@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <!-- SEO Meta Tags -->
-  <title>Oyebola Phillips Adeniyi - Front-End Developer | Social Media | Content Creator</title>
+  <title>Oyebola Phillips Adeniyi - Front-End Developer | Social Media Manager | Content Creator</title>
   <meta name="description" content="Explore the portfolio of Oyebola Phillips Adeniyi, a creative Front-End Developer and Social Media Content Creator. Showcasing projects and design expertise.">
   <meta name="keywords" content="Oyebola Phillips, Front-End Developer, Social Media Manager, Content Creator, Portfolio, Web Development, Nigeria, CapCut, Canva">
   <meta name="author" content="Oyebola Phillips Adeniyi">
@@ -31,10 +31,16 @@
 
   <style>
     body { font-family: sans-serif; margin: 0; padding: 0; line-height: 1.6; }
-    header { background: teal; color: white; padding: 2rem; text-align: center; }
+    header { background: teal; color: white; padding: 1rem; text-align: center; }
     section { padding: 2rem; }
-    .btn { background: teal; color: white; padding: 1rem 2rem; text-decoration: none; display: inline-block; border-radius: 5px; }
+    .btn { background: teal; color: white; padding: 1rem 2rem; text-decoration: none;     display: inline-block; border-radius: 5px; }
     .projects img { width: 100%; max-width: 300px; margin-top: 10px; }
+    .video-70, .iframe-70 { width: 70% !important; margin: 0 auto; display: block;}
+    .video-wrapper { width: 70%; margin: 0 auto; position: relative; padding-bottom: 39.375%; /* 70% of 56.25% for 16:9 aspect ratio */ height: 0; }
+    .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 16px; }
+    .center-video { display: block; margin: 2rem auto; border-radius: 16px; }
+    .mp4 {padding-top: 100px;}
+    
 
     @media (max-width: 768px) {
       header { padding: 1rem; }
@@ -43,9 +49,9 @@
   </style>
 </head>
 <body>
-    <header>
+  <header>
     <h1>Hello, I'm OYEBOLA PHILLIPS ADENIYI</h1>
-    <p>Front-End Developer | Social Media | Content Creator</p>
+    <p>Front-End Developer | Social Media Manager | Digital Marketer | Travel Consultant</p>
   </header>
 
   <h2>🌐 Sample Project</h2>
@@ -67,25 +73,23 @@
         <p><strong>Project Title:</strong> Family Of Four Visa Approved, Contact Slyde To Make Yours a Reality</p>
         <p><strong>Role:</strong> Video Editor & Content Creator</p>
         <p><strong>Tool Used:</strong> CapCut</p>
-        <p>This video was expertly edited by me as part of my work for Slyde International Services. I handled all aspects of the editing process to create an engaging and professional final product.</p>
+        <p>This video was expertly edited by me as part of my work for Slyde International Services. I handled all aspects of the editing process to create an engaging and professional final product on all the videos on their youtube channel</p>
         
-        <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+        <div class="video-wrapper">
           <iframe src="https://www.youtube.com/embed/-rd4K6_u52Y" 
-                  style="position:absolute;top:0;left:0;width:100%;height:100%;" 
                   frameborder="0" allowfullscreen>
           </iframe>
         </div>
       </section>
 
-      <section>
+      <section class="mp4">
         <h2>🎥 Aberystwyth University Promo (Slyde International)</h2>
         <p><strong>Project Title:</strong> Aberystwyth University Promo</p>
         <p><strong>Created For:</strong> Slyde International Services</p>
         <p><strong>Tool Used:</strong> CapCut, Canva</p>
         <p>As the Social Media Manager for Slyde International, I created this promotional video for Aberystwyth University’s September intake. I handled the scripting, editing, and visual design to attract clients looking to study in the UK.</p>
-        <video width="100%" controls>
+        <video width="70%" controls class="center-video">
           <source src="Aberyswyth-ad.mp4" type="video/mp4">
-          Your browser does not support the video tag.
         </video>
       </section>
     </div>
